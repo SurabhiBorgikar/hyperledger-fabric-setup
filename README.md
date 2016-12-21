@@ -1,5 +1,7 @@
 # Hyperledger fabric and chaincode deployment using docker (natively)
 
+This guide assumes you have docker installed.
+
 ##Pull the docker images present on docker hub
 
 ~~~~~
@@ -9,7 +11,9 @@
 ~~~~~
 
 
+
 Create a docker-compose.yml file and paste the below content
+
 ~~~~~
 membersrvc:
   image: hyperledger/fabric-membersrvc
@@ -39,6 +43,7 @@ vp0:
 
 ~~~~~~
 
+
 Run the docker compose using below command and it should start 2 docker conatiners
 
 ~~~~~
@@ -66,7 +71,9 @@ We will have to loginto the container created from the image "hyperledger/fabric
 
 ~~~~~~
 
+
 Sample output (It may differ based on the number of docker containers you are running)
+
 ~~~~~~
 
 CONTAINER ID        IMAGE                           COMMAND                  CREATED             STATUS              PORTS                                                      NAMES
@@ -77,6 +84,7 @@ a09537ccf5ac        hyperledger/fabric-peer         "sh -c 'sleep 5; peer"   19 
 
 
 The container id/name in sample output is a09537ccf5ac / githubcom_vp0_1
+
 
 
 Login to the container by below command
@@ -103,7 +111,7 @@ Now build the chaincode using the below command
 ~~~~~~
 
 
-After execution when you do "ls" you should be able to see "chaincode_example02" created
+After execution when you do "ls" you should be able to see "chaincode_example02" created.
 
 Run the following chaincode command to start and register the chaincode with the validating peer
 
@@ -115,7 +123,7 @@ Run the following chaincode command to start and register the chaincode with the
 
 # Running the chaincode using API
 
-All the enpoints are exposed on <ip of host>:7050
+All the enpoints are exposed on "<ip of host>:7050"
 
 
 Registering user through API

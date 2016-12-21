@@ -123,7 +123,7 @@ Run the following chaincode command to start and register the chaincode with the
 
 # Running the chaincode using API
 
-All the enpoints are exposed on '\<ip of host\>:7050'
+All the enpoints are exposed on \<ip of host\>:7050
 
 
 Registering user through API

@@ -126,7 +126,7 @@ Run the following chaincode command to start and register the chaincode with the
 All the enpoints are exposed on \<ip of host\>:7050
 
 
-Registering user through API
+## Registering user through API
 
 The username and password are present in the file /opt/gopath/src/github.com/hyperledger/fabric/membersrvc/membersrvc.yaml 
 Search for enrollmentID and enrollmentPW listed in the eca.users section to know more credentials if needed
@@ -136,7 +136,7 @@ This request contains user jim along with the password you can directly use it.
 
 Rest request
 ~~~~~
-	POST localhost:7050/registrar
+	POST <host:port>:7050/registrar
 
 	{
 	  "enrollId": "jim",
@@ -159,7 +159,7 @@ Output
 
 REST Request
 ~~~~~
-	POST host:port>/chaincode
+	POST <host:port>/chaincode
 	{
 	  "jsonrpc": "2.0",
 	  "method": "deploy",

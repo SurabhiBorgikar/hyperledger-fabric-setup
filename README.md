@@ -54,7 +54,7 @@ Run the docker compose using below command and it should start 2 docker conatine
 
 # Deploying the chaincode.
 
-The chaincode example 02 is an simple chain code in which you can have "n" number of parties each having some account balance
+The chaincode example 02 is an simple chain code in which you can have two parties each having some account balance
 You can then invoke the chaincode to transfer amount from one account to another and at any point query the ledger to check the balance.
 
 After deploying we will have 2 parties "a" and "b" with account balance of "100" and "200" each.
@@ -250,7 +250,7 @@ Query to find the value of "a"
 	      "ctorMsg": {
 	         "args":["query", "a"]
 	      },
-	      "secureContext": "mycc"
+	      "secureContext": "jim"
 	  },
 	  "id": 5
 	}
@@ -284,7 +284,7 @@ Query to find the value of "b"
 	      "ctorMsg": {
 	         "args":["query", "b"]
 	      },
-	      "secureContext": "mycc"
+	      "secureContext": "jim"
 	  },
 	  "id": 5
 	}
